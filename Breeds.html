@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hen Den</title>
+    <style>
+        body {
+            background-color: #F1E6D8;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #F1E6D8;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #5B3D15;
+        }
+        header h1 {
+            color: #5B3D15;
+            font-size: 3em;
+            margin: 0;
+        }
+        nav {
+            background-color: #F1E6D8;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 2px solid #5B3D15;
+        }
+        nav a {
+            text-decoration: none;
+            color: #5B3D15;
+            margin: 0 20px;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            color: #FFD700;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #F1E6D8;
+            padding: 10px;
+            text-align: center;
+            color: #5B3D15;
+            border-top: 2px solid #5B3D15;
+        }
+        div h1 {
+            color: #5B3D15;
+        }
+
+        /* Flexbox style for the image and content div */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap; /* Allow elements to wrap to the next line if needed */
+            justify-content: space-around; /* Optional: Adds space between columns */
+			align-items: center;
+			padding: 20px;
+			border-bottom: 2px solid #5B3D15;
+        }
+        .image-container {
+            flex: 1 1 45%; /* Each item will take 45% of the width */
+			display: flex;
+			justify-content: center;
+			align-items: center;
+            padding: 10px;
+        }
+        .text-container {
+            flex: 1 1 45%; /* Each item will take 45% of the width */
+            padding: 10px;
+            text-align: center;
+        }
+		.text-color{
+			color: #5B3D15;
+			font-size: 20px
+		}
+		img{
+			border-width: 3px;
+			border-style: solid;
+			border-color: #5B3D15;
+		}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Breeding and Selections</h1>
+    </header>
+	<h2 class="text-container" style="color: #5B3D15"> Come and meet these EGGcellent breeds!</h2>
+
+    <div class="flex-container">
+        <!-- Text container -->
+        <div class="text-container">
+            <h2 class="text-color"> White Leghorn</h2>
+			<p class="text-color"> White Leghorns are considered some of the best egg layers in the poultry world due to their exceptional productivity and resilience. Known for their high feed-to-egg conversion rate, these hens consistently lay a large number of white eggs, often exceeding 300 eggs per year. Their active and hardy nature allows them to thrive in a variety of environments, making them ideal for both commercial and backyard farming. Additionally, their early maturity and consistent laying cycles contribute to their reputation as reliable producers. White Leghorns are also efficient foragers, which helps reduce feed costs, and their calm temperament makes them easy to manage, further enhancing their value as egg layers. </p>
+        </div>
+        <!-- Image container -->
+        <div class="image-container">
+            <img src="Poultry Pictures/WhiteLeghornShop.jpg" alt="White Leghorn" width="400" height="400">
+        </div>
+    </div>
+	<div class="flex-container">
+	<div class="text-container">
+		<h2 class="text-color">Rhode Island Red</h2>
+		<p class="text-color">Rhode Island Reds are widely regarded as one of the best egg-laying breeds due to their impressive consistency and high production rates. These hardy hens can lay between 250 to 300 brown eggs per year, often starting at a young age and continuing for many years. Known for their adaptability, Rhode Island Reds thrive in various climates and are particularly well-suited for both free-range and confined environments. Their calm and docile nature makes them easy to manage, while their excellent foraging abilities help lower feed costs. Additionally, Rhode Island Reds are resilient to common poultry diseases, ensuring long-term productivity. Their robust egg-laying ability, coupled with their resilience, makes them a favorite choice for both backyard flocks and commercial operations.</p>
+		</div>
+	<div class="image-container">
+		<img src="Poultry Pictures/RIRedShop.jpg" alt="Rhode Island Red" width="400" height="400"></div>
+	</div>
+	<div class="flex-container">
+	<div class="text-container">
+		<h2 class="text-color">Australorp</h2>
+		<p class="text-color"> Australorps are truly excellent egg layers, known for their remarkable egg production and outstanding consistency. These friendly and calm hens can lay up to 300 large brown eggs per year, often surpassing other breeds in their productivity. Their high egg production starts at an early age and continues throughout their lifespan, making them a reliable choice for both backyard flocks and commercial farms. Australorps are also hardy and adaptable, thriving in a variety of climates, from hot summers to cold winters, while maintaining their laying capabilities. Their gentle nature and excellent foraging skills make them easy to manage, and their resilience to disease ensures they remain a top choice for egg production. With their impressive egg-laying ability, Australorps have rightfully earned their place as one of the best breeds for reliable, consistent egg production.</p></div>
+	<div class="image-container"><img src="Poultry Pictures/AustralorpShop.jpg" alt="Australorp" width="400" height="400"></div>
+	</div>
+
+    <footer>
+        <p>© 2025 The Hen Den</p>
+    </footer>
+</body>
+</html>
