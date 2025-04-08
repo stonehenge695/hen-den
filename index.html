@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Hen Den</title>
+    <!-- Bootstrap CSS Link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            background-color: #F1E6D8;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #F1E6D8;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #5B3D15;
+        }
+        header h1 {
+            color: #5B3D15;
+            font-size: 3em;
+            margin: 0;
+        }
+        nav {
+            background-color: #F1E6D8;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 2px solid #5B3D15;
+        }
+        nav a {
+            text-decoration: none;
+            color: #5B3D15;
+            margin: 0 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #FFD700;
+        }
+        .welcome-section {
+            text-align: center;
+            padding: 30px 20px;
+        }
+        .welcome-section h2 {
+            color: #5B3D15;
+        }
+        .welcome-section p {
+            max-width: 600px;
+            margin: auto;
+            color: #333;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            background-color: #F1E6D8;
+            padding: 10px;
+            text-align: center;
+            color: #5B3D15;
+            border-top: 2px solid #5B3D15;
+        }
+
+        /* Fix stretched images and remove gray space */
+        .carousel-item img {
+            width: auto; 
+            max-width: 100%;
+            height: auto;
+            max-height: 500px; 
+            display: block;
+            margin: 0 auto;
+        }
+        .carousel-caption {
+            background: rgba(0, 0, 0, 0.5); 
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .carousel-caption h5, .carousel-caption p {
+            color: white;
+        }
+
+        /* Additional section with cards */
+        .info-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 30px 20px;
+        }
+        .info-card {
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            width: 300px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .info-card h4 {
+            color: #5B3D15;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Hen Den</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#">Housing/Care</a>
+        <a href="#">Health/Behaviour</a>
+        <a href="#">Feeding Requirment</a>
+		<a href="Breeds.html">Breeds/Selection</a>
+
+    </nav>
+
+    <div class="welcome-section">
+        <h2><strong>Welcome to The Hen Den!</strong></h2>
+        <p><strong>Fresh eggs, happy chickens, and a cost-effective way to combat rising prices. Discover why raising your own flock is the way to go!</strong></p>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12"> 
+                <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators1" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators1" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img class="d-block mx-auto" src="Images/EggGraph.png" alt="Egg Price Trends">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Egg Prices Rising?</h5>
+                                <p>See how costs have changed over time.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block mx-auto" src="Images/EggBowl.png" alt="Egg Bowl">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Farm-Fresh Goodness</h5>
+                                <p>Fresh, organic, and full of nutrients.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block mx-auto" src="Images/ChickenMugshot.png" alt="Chicken">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Meet Your Chickens</h5>
+                                <p>Friendly, fun, and full of personality!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="info-section">
+        <div class="info-card">
+            <h4>Save Money</h4>
+            <p>Reduce your grocery bill with home-raised eggs.</p>
+        </div>
+        <div class="info-card">
+            <h4>Better Taste</h4>
+            <p>Enjoy richer, more flavorful eggs from your own hens.</p>
+        </div>
+        <div class="info-card">
+            <h4>Family Fun</h4>
+            <p>Raising chickens is a rewarding and educational experience.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 The Hen Den. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
